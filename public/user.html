@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>User Info Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- going to render the users here -->
+  <div id="users-info"></div>
+    <script>
+      // fetch the user data and render it on this page
+      fetch(`/users/${user.id}`)
+        .then(response => response.json())
+        .then(users => {
+          const userListDiv = document.getElementById('users-list');
+          userListDiv.innerHTML = '<h2>Current Users</h2>'
+          users.forEach(user => {
+            userListDiv.innerHTML += `
+            <div class="user-info">
+              <p>ID: ${user.id}</p>
+              <p>Email: ${user.email}</p>
+              <p>First Name: ${user.firstName}</p>
+              <p>Last Name: ${user.lastName}</p>
+              <p>Status: ${user.state}</p>
+              <button class="back-button" onClick="window.location.href='/admin.html'">back</button>
+            <button class="delete-button">X</button>
+              `
+          });
+        }).catch(error => console.error('Error fetching users:', errors));
+    </script>
+</body>
+</html>

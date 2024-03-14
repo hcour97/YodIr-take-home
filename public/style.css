@@ -1,0 +1,75 @@
+body {
+    background-color: #394a51;
+    color: #fbf2d5;
+    font-family: tahoma;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+a {
+    color: #fbf2d5;
+    text-decoration: none;
+}
+
+.link-button, .submit-button {
+    background-color: #fdc57b;
+    color: #fbf2d5;
+    font-family: tahoma;
+    font-weight: bold;
+    padding: 8px;
+    border-color:#fdc57b;
+    border-radius: 6px;
+}
+
+.user-info-button, .delete-button {
+    background-color: #fdc57b;
+    color: #fbf2d5;
+    font-family: tahoma;
+    font-weight: bold;
+    padding: 8px;
+    border-color:#fdc57b;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 70%;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    background-color: #fdc57b;
+    color: #fbf2d5;
+    font-family: tahoma;
+    font-weight: bold;
+    padding: 8px;
+    border-color:#fdc57b;
+    border-radius: 6px;
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    background-color: #7fa99b;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
